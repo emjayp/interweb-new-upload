@@ -1,0 +1,295 @@
+/* DASHBOARD */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+   
+}
+.header{
+    font-size: 23px
+}
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Ensures horizontal alignment for child elements */
+    padding: 20px;
+    padding-left: 150px;
+    padding-right: 180px;
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 80px;
+    background-color: #547ba7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.sidebar-icon {
+    margin: 15px 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.logout{
+    margin: 15px 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 100px; /* Moves the icon 30px down */
+   
+}
+
+/* Header */
+.header {
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-left: 80px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 18px;
+    color: #547ba7;
+}
+
+/* Welcome Box */
+.welcome-box {
+    background: url('user.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    margin-top: 40px; /* Space above the box */
+    margin-right: 185px;
+    margin-left: 20px;
+    padding: 20px; /* Internal padding for spacing */
+    padding-bottom: 30px; 
+    border-radius: 21px;
+    max-width: none; /* Remove the width limit if you want full expansion */
+}
+
+.welcome-box h2 {
+    margin: 0 0 10px;
+    text-align: left;
+    padding-right: 100px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.welcome-box p {
+    margin: 0 0 10px;
+    text-align: left;
+    padding-right: 100px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+   
+
+
+/* Stats Section */
+.top-info{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 30px;
+    margin-right: 215px;
+    text-align: left;
+    height: 200px;
+    
+}
+
+.stats-card{
+  flex: 1;
+  background-color: #eef2f5;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  position: relative;
+  background-color: #547ba7;
+}
+
+.stats-card p{
+    font-size: 36px;
+    color: white;
+    font-family: bold;
+
+}
+
+.card.urgent {
+  background-color: #ffcccc;
+}
+
+.card h3 {
+  margin: 0;
+}
+
+.card span {
+  display: block;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+
+/* Calendar */
+.calendar {
+    background-color: #2d3748;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: right;
+    margin-top: 80px;
+    margin-right: 100px;
+
+    /* Positioning for the upper-right corner */
+    position: absolute; /* Or use 'fixed' if you want it always visible on the screen */
+    top: 20px; /* Distance from the top of the container/viewport */
+    right: 20px; /* Distance from the right of the container/viewport */
+}
+
+.calendar h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.calendar table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.calendar td, .calendar th {
+    color: #ddd;
+    padding: 5px;
+    text-align: center;
+}
+
+.calendar th {
+    color: #ffd700;
+}
+
+.list-of-doctors {
+    padding-left: 150px;
+    padding-right: 180px;
+}
+
+.doctors {
+    margin-bottom: 20px;
+  }
+  
+  .doctors h2 {
+    margin-bottom: 10px;
+    color: #547ba7;;
+    padding-right: 900px;
+    padding-top: 20px;
+  }
+
+  .card {
+  display: inline-block;
+  width: 30%;
+  text-align: center;
+  margin-right: 10px;
+  }
+  
+  /* stats counting */
+  .stats {
+    background-color:#FAF9F6;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    float: right;
+    
+  }
+  
+  .stats-number {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .growth {
+    color: green;
+    font-size: 18px;
+  }
+
+
+/* STAFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF*/
+.staff p{
+ font-size: 24;
+ color:#547ba7;
+ text-align: left;
+ padding-top: 30px;
+ padding-right: 900px;
+}
+
+.card-container {
+  position: relative;
+  display: flex; 
+  justify-content: space-between; 
+  gap: 20px; 
+  padding: 20px;
+}
+
+
+.dr-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 18rem;
+}
+
+
+.dr-card img {
+  width: 100%; 
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+
+.card-body {
+  padding: 15px;
+}
+
+
+.btn {
+  display: inline-block;
+  padding: 10px 15px;
+  color: white;
+  background-color: #007bff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+
